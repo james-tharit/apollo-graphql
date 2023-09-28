@@ -1,13 +1,12 @@
-import { getWord } from "./words"
+import { getWord } from "./words";
 
-jest.mock("./words", () => ({ 
+jest.mock("./words", () => ({
   ...jest.requireActual("./words"),
-  getWord: jest.fn().mockReturnValue('abatis')
-}))
+  getWord: jest.fn().mockReturnValue("abatis"),
+}));
 
-describe('words',() => {
-  it('returns word', () => {
-    expect(getWord()).toBe('abatis')
-  })
-})
-
+describe("words", () => {
+  it("returns word", () => {
+    expect(getWord()).toBe("abatis");
+  });
+});
