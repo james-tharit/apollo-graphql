@@ -1,19 +1,8 @@
-const words: string[] = [
-  "abatis",
-  "abattoir",
-  "abaxial",
-  "ava",
-  "groupballadeer",
-  "carswell",
-  "deva",
-  "devaluate",
-  "devaluation",
-  "falito",
-  "falk",
-  "falkirk",
-];
+import data from "../data/words.json";
 
-export const randomNumber = (max: number) =>
+const words: string[] = data.words;
+
+export const randomNumber = (max: number): number =>
   Math.floor(Math.random() * (max + 1));
 
 export const getWord = () => {
