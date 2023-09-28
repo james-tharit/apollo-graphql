@@ -1,5 +1,4 @@
-import data from "../data/words.json";
-
+import data from "../data/words.json" assert { type: "json" };
 const words: string[] = data.words;
 
 export const randomNumber = (max: number): number =>
