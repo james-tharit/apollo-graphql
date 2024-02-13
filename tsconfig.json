@@ -10,5 +10,9 @@
     "esModuleInterop": true,
     "types": ["node", "jest"]
   },
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
+  },
   "exclude": ["src/**/*.test.ts"]
 }

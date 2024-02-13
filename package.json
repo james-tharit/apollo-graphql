@@ -8,7 +8,7 @@
     "lint": "pnpm prettier --check .",
     "format": "pnpm prettier --write .",
     "test": "jest",
-    "start": "pnpm run compile && node --experimental-json-modules ./dist/src/index.js"
+    "start": "pnpm run compile && ts-node ./dist/src/index.js"
   },
   "keywords": [],
   "author": "",
